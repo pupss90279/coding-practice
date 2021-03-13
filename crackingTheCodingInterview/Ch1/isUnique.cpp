@@ -4,6 +4,7 @@
 #include <vector>
 #include <cassert>
 #include <bitset>
+#include <algorithm>
 using namespace std;
 
 // Assuming ASCII (only 128 chars)
@@ -57,6 +58,29 @@ bool isUniqueBitSet(string str) {
 	return true;
 }
 
+bool isUniqueBruteForce(string str) {
+
+	for(int i=0; i<str.length()-1; ++i) {
+
+		for(int j=i+1; j<str.length(); ++j) {
+
+			if(str[i] == str[j]) return false;
+		}
+	}
+
+	return true;
+}
+
+bool isUniqueSort(string str) {
+
+	sort(str.begin(), str.end());
+	for(int i=0; i<str.length()-1; ++i) {
+		if(str[i] == str[i+1]) return false;
+	}
+
+	return true;
+}
+
 int main() {
 
 	string test1 = "abcddd";
@@ -70,4 +94,10 @@ int main() {
 
 	assert(!isUniqueBitSet(test1));
 	assert(isUniqueBitSet(test2));
+
+	assert(!isUniqueBruteForce(test1));
+	assert(isUniqueBruteForce(test2));
+
+	assert(!isUniqueSort(test1));
+	assert(isUniqueSort(test2));
 }

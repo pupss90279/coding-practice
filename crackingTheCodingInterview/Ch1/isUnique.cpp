@@ -83,6 +83,8 @@ bool isUniqueSort(string str) {
 
 int main() {
 
+	cout<<"Is Unique"<<endl;
+
 	string test1 = "abcddd";
 	string test2 = "acfgrjlk";
 
@@ -100,4 +102,6 @@ int main() {
 
 	assert(!isUniqueSort(test1));
 	assert(isUniqueSort(test2));
+
+	cout<<"All check passed"<<endl;
 }

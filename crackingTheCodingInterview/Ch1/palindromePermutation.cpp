@@ -39,6 +39,22 @@ bool palindromePermutation(string str) {
 	return true;
 }
 
+bool palindromePermutationBitSet(string str) {
+
+	bitset<32> charIndicator;
+
+	for(char s: str) {
+
+		s = toupper(s);
+
+		if(notLetter(s)) continue;
+
+		charIndicator.flip(s - 'A');
+	}
+
+	return charIndicator.count() < 2;
+}
+
 int main() {
 
 	string test1 = "Tact Coa";
@@ -48,4 +64,8 @@ int main() {
 	assert(palindromePermutation(test1));
 	assert(!palindromePermutation(test2));
 	assert(palindromePermutation(test3));
+
+	assert(palindromePermutationBitSet(test1));
+	assert(!palindromePermutationBitSet(test2));
+	assert(palindromePermutationBitSet(test3));
 }

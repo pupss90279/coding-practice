@@ -55,6 +55,25 @@ bool palindromePermutationBitSet(string str) {
 	return charIndicator.count() < 2;
 }
 
+// if only one one in string
+// 010 0000 - 1 -> 001 1111
+// so (x-1) & x = 0 -> one or zero 1s in bit vector
+bool palindromePermutationBitManipulationOptimization(string str) {
+
+	int checker = 0;
+
+	for(char s: str) {
+
+		s = toupper(s);
+
+		if(notLetter(s)) continue;
+
+		checker ^= (1 << (s - 'A'));
+	}
+
+	return !((checker-1) & checker);
+}
+
 int main() {
 
 	string test1 = "Tact Coa";
@@ -68,4 +87,8 @@ int main() {
 	assert(palindromePermutationBitSet(test1));
 	assert(!palindromePermutationBitSet(test2));
 	assert(palindromePermutationBitSet(test3));
+
+	assert(palindromePermutationBitManipulationOptimization(test1));
+	assert(!palindromePermutationBitManipulationOptimization(test2));
+	assert(palindromePermutationBitManipulationOptimization(test3));
 }

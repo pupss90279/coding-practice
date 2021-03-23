@@ -10,5 +10,6 @@
 		- [String Compression](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/stringCompression.cpp)
 		- [Rotate Matrix](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/rotateMatrix.cpp)
 		- [Zero Matrix](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/zeroMatrix.cpp)
+		- [String Rotation](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/stringRotation.cpp)
 	- Resource
 		- [Solution Github Page](https://github.com/careercup/CtCI-6th-Edition)

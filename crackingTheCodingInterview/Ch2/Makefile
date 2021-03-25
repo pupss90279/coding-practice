@@ -2,8 +2,8 @@
 CC = g++
 CFLAGS = -Wall -g
 
-removeDups.exe: removeDups.o node.o
-	$(CC) $(CFLAGS) -o removeDups removeDups.o node.o
+removeDups: removeDups.o node.o
+	$(CC) $(CFLAGS) -o removeDups.exe removeDups.o node.o
 
 removeDups.o: removeDups.cpp node.h
 	$(CC) $(CFLAGS) -c removeDups.cpp

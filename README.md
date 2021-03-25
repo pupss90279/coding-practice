@@ -12,4 +12,5 @@
 		- [Zero Matrix](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/zeroMatrix.cpp)
 		- [String Rotation](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/stringRotation.cpp)
 	- Resource
+		- [Textbook Website](http://www.crackingthecodinginterview.com/)
 		- [Solution Github Page](https://github.com/careercup/CtCI-6th-Edition)

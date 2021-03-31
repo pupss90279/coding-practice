@@ -11,6 +11,9 @@
 		- [Rotate Matrix](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/rotateMatrix.cpp)
 		- [Zero Matrix](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/zeroMatrix.cpp)
 		- [String Rotation](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch1/stringRotation.cpp)
+
+	- Chapter 2
+		- [Remove Dups](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch2/removeDups.cpp) 
 	- Resource
 		- [Textbook Website](http://www.crackingthecodinginterview.com/)
 		- [Solution Github Page](https://github.com/careercup/CtCI-6th-Edition)

@@ -50,8 +50,8 @@ Node* returnKthToLastRecursive(Node* head, int k) {
 
 int main() {
 
-	vector<int> test5{5, 4, 3, 2, 1};
-	Node* head = createLinkedList(test5);
+	vector<int> test1{5, 4, 3, 2, 1};
+	Node* head = createLinkedList(test1);
 
 	assert((returnKthToLast(head, 1)->data) == 5);
 	assert((returnKthToLast(head, 2)->data) == 4);

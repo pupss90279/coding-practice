@@ -14,6 +14,8 @@
 
 	- Chapter 2
 		- [Remove Dups](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch2/removeDups.cpp) 
+		- [Return Kth To Last](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch2/returnKthToLast.cpp)
+		- [Deleted Middle Node](https://github.com/pupss90279/coding-practice/blob/main/crackingTheCodingInterview/Ch2/deleteMiddleNode.cpp)
 	- Resource
 		- [Textbook Website](http://www.crackingthecodinginterview.com/)
 		- [Solution Github Page](https://github.com/careercup/CtCI-6th-Edition)

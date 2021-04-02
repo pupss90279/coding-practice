@@ -34,18 +34,11 @@ void deleteMiddleNodeNoAccessToHead(Node* nodeToDelete) {
 	assert(nodeToDelete != NULL);
 	assert(nodeToDelete->next != NULL);
 
-	while(nodeToDelete) {
 
-		nodeToDelete->data = nodeToDelete->next->data;
-
-		if(!nodeToDelete->next->next) {
-
-			delete nodeToDelete->next;
-			nodeToDelete->next = NULL;
-		}
-
-		nodeToDelete = nodeToDelete->next;
-	}
+	Node* temp = nodeToDelete->next;
+	nodeToDelete->data = nodeToDelete->next->data;
+	nodeToDelete->next = nodeToDelete->next->next;
+	delete temp;
 }
 
 int main() {

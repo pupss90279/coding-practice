@@ -29,6 +29,24 @@ void deleteMiddleNode(Node* head, Node* nodeToDelete) {
 	}
 }
 
+void deleteMiddleNodeNoAccessToHead(Node* nodeToDelete) {
+
+	assert(nodeToDelete->next != NULL);
+
+	while(nodeToDelete) {
+
+		nodeToDelete->data = nodeToDelete->next->data;
+
+		if(!nodeToDelete->next->next) {
+
+			delete nodeToDelete->next;
+			nodeToDelete->next = NULL;
+		}
+
+		nodeToDelete = nodeToDelete->next;
+	}
+}
+
 int main() {
 
 	vector<int> test1{5, 4, 3, 2, 1};
@@ -49,5 +67,16 @@ int main() {
 	printLinkedList(head);
 
 	deleteMiddleNode(head, head->next);
+	printLinkedList(head);
+
+	cout<<"-----------------------------"<<endl;
+
+	head = createLinkedList(test1);
+	printLinkedList(head);
+
+	deleteMiddleNodeNoAccessToHead(head->next);
+	printLinkedList(head);
+
+	deleteMiddleNodeNoAccessToHead(head->next->next);
 	printLinkedList(head);
 }

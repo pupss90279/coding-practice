@@ -31,6 +31,7 @@ void deleteMiddleNode(Node* head, Node* nodeToDelete) {
 
 void deleteMiddleNodeNoAccessToHead(Node* nodeToDelete) {
 
+	assert(nodeToDelete != NULL);
 	assert(nodeToDelete->next != NULL);
 
 	while(nodeToDelete) {
